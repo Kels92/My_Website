@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1564506585763.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2914119098",
+    "id" : "E6D55D9D",
+    "lastKnownWriteTime" : 1564120012,
+    "last_content_update" : 1564120012,
+    "path" : "C:/Users/kcha0642/OneDrive - The University of Sydney (Staff)/Presentations/Academic website/config/_default/params.toml",
+    "project_path" : "config/_default/params.toml",
+    "properties" : {
+        "cursorPosition" : "24,9",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "toml"
+}

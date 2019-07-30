@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introduction to adaptive trial designs</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Kelsey Chalmers" />
+    <meta name="date" content="2019-03-19" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/rladies.css" rel="stylesheet" />
+    <link href="libs/remark-css/rladies-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Introduction to adaptive trial designs
+## MCHP Journal Club
+### Kelsey Chalmers
+### 19 March 2019
+
+---
+
+
+
+
+
+# Innovative trials workshop 
+
+- Australian Clinical Trials Alliance (ACTA) workshop in February
+
+--
+
+## Overview
+
+- Definitions of adaptive or innovative trial designs
+
+- Bayesian statistics
+
+- Examples and challenges of organising and running adaptive trials 
+
+???
+
+- Workshop in February on adaptive trials -- some introduction to the theory as well as practicalities
+- Journal club goal: share workshop, not planning on running adaptive trials yet but good space for discussion
+
+---
+
+# What are adaptive trials? 
+
+Definition:
+
+&gt; An adaptive clinical trial is a clinical trial that evaluates a medical device or treatment by observing participant outcomes (and possibly other measures, such as side-effects) on a prescribed schedule, and modifying parameters of the trial protocol in accord with those observations.
+
+&gt;  -- [Wikipedia: Adaptive clinical trials](https://en.wikipedia.org/wiki/Adaptive_clinical_trial)
+
+--
+
+- FDA released guidance on adaptive trials in 2010
+
+- Reporting checklist for adaptive trials now available
+
+- Ten trials currently being run in Australia
+
+
+---
+
+background-image: url("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5830330/bin/12916_2018_1017_Fig1_HTML.jpg")
+background-size: 70% 
+background-position: 50% 40%
+
+.footnote[
+Pallmann P, Bedding AW, Choodari-Oskooei B, et al. [Adaptive designs in clinical trials: why use them, and how to run and report them.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5830330/) BMC Med. 2018;16(1):29. Published 2018 Feb 28. doi:10.1186/s12916-018-1017-7
+]
+
+---
+
+background-image: url("https://www.bmj.com/content/bmj/360/bmj.k698/F1.large.jpg")
+background-size: 55% 
+background-position: 50% 20%
+
+.footnote[
+From  Thorlund Kristian, Haggstrom Jonas, Park Jay JH, Mills Edward J. [Key design considerations for adaptive clinical trials: a primer for clinicians](https://www.bmj.com/content/360/bmj.k698) BMJ 2018; 360 :k698 
+]
+
+???
+
+Pre-planned changes that an AD may permit include, but are not limited to [5]:
+
+    - refining the sample size
+    - abandoning treatments or doses
+    - changing the allocation ratio of patients to trial arms
+    - identifying patients most likely to benefit and focusing recruitment efforts on them
+    - stopping the whole trial at an early stage for success or lack of efficacy.
+
+---
+
+background-image: url("https://media1.tenor.com/images/a0637efd1aa7a8c3791ca6b1a1793b97/tenor.gif?itemid=13007153")
+background-position: 50% 50%
+background-size: 30% 30%
+class: center, inverse
+
+# Why adaptive trials? 
+
+---
+
+# Drawbacks of other ('agricultural') trials 
+
+- Many Phase III trials fail due to poorly designed Phase II trials
+
+- Many trials don't meet recruitment targets
+
+- Usual trial designs don't deal well with treatment heterogeneity
+
+--
+
+# Positives of adaptive trials
+
+- Can get outcomes quickly (if possible)
+
+- Useful if there is uncertainty about the treatment effect
+
+- Stakeholder (including patient) buy-in
+
+---
+
+
+background-image: url("https://media1.tenor.com/images/f47e164083ee5904cd9ff54cf50843a5/tenor.gif?itemid=10885020")
+background-position: 50% 50%
+class: center, inverse
+
+# Bayesian statistics
+
+???
+
+- Design and prediction require a lot of computing power -- so software is only recently available
+
+
+---
+
+https://s3.amazonaws.com/quantstart/media/images/qs-bayes-bernoulli.png
+
+background-image: url("https://s3.amazonaws.com/quantstart/media/images/qs-bayes-bernoulli.png")
+background-position: 50% 60%
+background-size: 70% 70%
+
+# Frequentist inference
+
+
+.footnote[
+From  [Bayesian Statistics Explained](https://www.analyticsvidhya.com/blog/2016/06/bayesian-statistics-beginners-simple-english/)
+]
+
+???
+- Probability density function - parameter is the chance of a heads when we flip a coin
+- Assume we know nothing about the coin - this parameter could be anything equally likely
+- We then start the experiment - get results of two heads - so now our density function changes - it seems more likely the chance of getting heads is higher than 50%
+- Keep going -- eventually with enough data or trials we get our estimate of 50%
+
+---
+
+background-image: url("https://screenshotscdn.firefoxusercontent.com/images/2c912378-1a42-462a-b06e-bac0cbc113bd.png")
+background-position: 50% 50%
+background-size: 70% 
+
+# Bayes formula
+
+
+.footnote[
+From  [Bayesian Statistics Explained](https://www.analyticsvidhya.com/blog/2016/06/bayesian-statistics-beginners-simple-english/)
+]
+
+???
+- Frequentist: we learn and make conclusions from the data we collect/observations. 'Pure' - no assumptions.
+- Bayesian: we have prior knowledge that we can update using the data we collect/observations. Prior beliefs, evidence, then our posterior beliefs (or what we know now)
+
+---
+
+background-image: url("https://imgs.xkcd.com/comics/frequentists_vs_bayesians.png")
+background-position: 50% 50%
+background-size: 50%
+
+
+---
+
+background-image: url("https://images-na.ssl-images-amazon.com/images/I/51HS-6Kws8L.jpg")
+background-position: 50% 50%
+background-size: 50%
+
+???
+- Book: academic beefs
+---
+
+background-image: url("https://www.nejm.org/na101/home/literatum/publisher/mms/journals/content/nejm/2016/nejm_2016.375.issue-1/nejmp1602256/20180329/images/img_xlarge/nejmp1602256_t1.jpeg")
+background-position: 50% 20%
+background-size: 80% 80%
+
+
+.footnote[
+From  Harrington, et al [(2018)](https://www.nejm.org/doi/full/10.1056/NEJMp1602256)
+]
+---
+
+background-image: url("https://media.giphy.com/media/l3fQi535GwytypMVW/giphy.gif")
+background-position: 50% 50%
+background-size: 50%
+class: center, inverse
+
+# Examples of trials
+
+???
+
+- Workshop: quite a few people spoke about their trials and the challenges
+- One issue was planning: the statistics is a complex step, and all the potential changes in your design is pre-planned. 
+- Simulations are important. 
+- There is a master protocol - a recipe book for the trial.
+- Ethics is a long process. Some journals have been slow to accept/review results from adaptive trials. 
+
+---
+
+background-image: url("https://screenshotscdn.firefoxusercontent.com/images/d45bfeb4-95fc-4ef1-85dc-f2927234dc83.png")
+background-position: 50% 50%
+background-size: 100%
+
+???
+
+- Scott Berry was at the workshop and involved in most of the adaptive trials
+- Consulting group who helps design and run these trials - and software as well
+
+---
+
+background-image: url("https://ars.els-cdn.com/content/image/1-s2.0-S1552526016300486-gr1.jpg")
+background-position: 50% 60%
+background-size: 60%
+
+# Examples of trials
+
+Dominantly Inherited Alzheimer Network Trials Unit (DIAN-TU) trial 
+
+.footnote[
+Bateman et al. (2017) [The DIAN-TU Next Generation Alzheimer's prevention trial: Adaptive design and progression model](https://www.sciencedirect.com/science/article/pii/S1552526016300486?via%3Dihub) Alzheimer's and Dementia. 13(1): 8-19. 
+]
+
+???
+
+DIANTU trial
+- Two drug arms have been completed
+
+---
+
+# Examples of trials
+
+Randomized, Embedded, Multifactorial Adaptive Platform Trial for Community- Acquired Pneumonia ([REMAP-CAP](https://clinicaltrials.gov/ct2/show/NCT02735707))
+&gt; Patients with pneumonia who are being treated in an ICU will receive many different treatments, as many as 20 or 30, that act together to treat both the infection and its effects on the body. When treating a patient, doctors choose from many different treatments, most of which are known or believed to be safe and effective. However, doctors don't always know which treatment option is the better one, as individuals or groups of individuals may respond differently. This study aims to help doctors understand which treatments work best.
+
+
+    &gt; - Test several treatments, at the same time, in the same patient.
+    &gt; - Look at the results as it goes and uses these results so that new patients in the study have a better chance of getting better treatments
+    &gt; - Drop treatments if they are shown to be less effective than others
+    &gt; - Add new treatments to the study as those that have undergone testing complete their evaluation
+
+???
+- One of the speakers who are setting this arm (and now recruiting patients) in Australia (Dr Colin McArthur)
+
+---
+
+background-image: url("https://screenshotscdn.firefoxusercontent.com/images/f3d64052-8a05-469e-b2ff-26652d602bbe.png")
+background-position: 50% 40%
+background-size: 60%
+
+.footnote[
+From Webb et al. ([2018](https://journals.lww.com/ccmjournal/Fulltext/2018/03000/Bending_the_Pandemic_Curve___Improving.14.aspx))
+]
+
+---
+
+background-image: url("https://uploads-ssl.webflow.com/5acfef79cee720851db1f938/5adb8f09fcceb94033d02692_Artboard%201.svg")
+background-position: 50% 70%
+background-size: 90%
+
+Investigation of Serial Studies to Predict Your Therapeutic Response with Imaging and Molecular Analysis ([I-SPY 2](https://www.ispytrials.org/i-spy-platform/i-spy2))
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

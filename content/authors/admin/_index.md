@@ -67,4 +67,6 @@ email: ""
 #- Visitors
 ---
 
-Kelsey Chalmers submitted her PhD in 2019 at the University of Sydney, and investigated the measurement of low-value procedures in Australian private health insurance claims. Prior to this, she studied and worked at the University of Queensland where she received a University Medal for her Bachelor of Science. During her PhD she was a scholarship recipient at the Capital Markets Cooperative Research Centre (in the Health Market Quality program) and a visiting Queen Elizabeth scholar at McMaster University.
+I submitted my PhD in 2019 at the University of Sydney, and investigated the measurement of low-value procedures in Australian private health insurance claims. Prior to this, I studied and worked at the University of Queensland where I received a University Medal for my Bachelor of Science (Hons) in Mathematics and Statistics. During my PhD I was a scholarship recipient at the Capital Markets Cooperative Research Centre (in the Health Market Quality program) and was a 2018 visiting Queen Elizabeth scholar at McMaster University. 
+
+My research interests include value in healthcare (specifically measurement in routinely collected data), and healthcare financing and out-of-pocket costs. 
